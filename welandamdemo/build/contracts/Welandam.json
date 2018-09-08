@@ -1,0 +1,1684 @@
+{
+  "contractName": "Welandam",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "executedOrders",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes16"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes16"
+        }
+      ],
+      "name": "pendingOrders",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "bytes16"
+        },
+        {
+          "components": [
+            {
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "name": "shipper",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "name": "merchant",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "name": "customer",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "recordOrder",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "confirmOrder",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052600260015534801561001557600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061050f806100656000396000f30060806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806361915e5d1461007257806386a97232146100d95780638da5cb5b146100f0578063a00f198a14610147578063afd4abd71461015e575b600080fd5b34801561007e57600080fd5b5061009d600480360381019080803590602001909291905050506101ed565b60405180826fffffffffffffffffffffffffffffffff19166fffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b3480156100e557600080fd5b506100ee610233565b005b3480156100fc57600080fd5b50610105610235565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561015357600080fd5b5061015c61025a565b005b34801561016a57600080fd5b5061019c60048036038101908080356fffffffffffffffffffffffffffffffff1916906020019092919050505061025c565b60405180856fffffffffffffffffffffffffffffffff19166fffffffffffffffffffffffffffffffff1916815260200184815260200183815260200182815260200194505050505060405180910390f35b6003818154811015156101fc57fe5b9060005260206000209060029182820401919006601002915054906101000a90047001000000000000000000000000000000000281565b565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b565b60026020528060005260406000206000915090508060000160009054906101000a9004700100000000000000000000000000000000029080600301604080519081016040529081600082015460001916600019168152602001600182018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561034d5780601f106103225761010080835404028352916020019161034d565b820191906000526020600020905b81548152906001019060200180831161033057829003601f168201915b5050505050815250509080600501604080519081016040529081600082015460001916600019168152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104115780601f106103e657610100808354040283529160200191610411565b820191906000526020600020905b8154815290600101906020018083116103f457829003601f168201915b5050505050815250509080600701604080519081016040529081600082015460001916600019168152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104d55780601f106104aa576101008083540402835291602001916104d5565b820191906000526020600020905b8154815290600101906020018083116104b857829003601f168201915b5050505050815250509050845600a165627a7a72305820f33546ecddede4f85a014e17942bd2f71d3a15e8916a4812109474ca738eee390029",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806361915e5d1461007257806386a97232146100d95780638da5cb5b146100f0578063a00f198a14610147578063afd4abd71461015e575b600080fd5b34801561007e57600080fd5b5061009d600480360381019080803590602001909291905050506101ed565b60405180826fffffffffffffffffffffffffffffffff19166fffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b3480156100e557600080fd5b506100ee610233565b005b3480156100fc57600080fd5b50610105610235565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561015357600080fd5b5061015c61025a565b005b34801561016a57600080fd5b5061019c60048036038101908080356fffffffffffffffffffffffffffffffff1916906020019092919050505061025c565b60405180856fffffffffffffffffffffffffffffffff19166fffffffffffffffffffffffffffffffff1916815260200184815260200183815260200182815260200194505050505060405180910390f35b6003818154811015156101fc57fe5b9060005260206000209060029182820401919006601002915054906101000a90047001000000000000000000000000000000000281565b565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b565b60026020528060005260406000206000915090508060000160009054906101000a9004700100000000000000000000000000000000029080600301604080519081016040529081600082015460001916600019168152602001600182018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561034d5780601f106103225761010080835404028352916020019161034d565b820191906000526020600020905b81548152906001019060200180831161033057829003601f168201915b5050505050815250509080600501604080519081016040529081600082015460001916600019168152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104115780601f106103e657610100808354040283529160200191610411565b820191906000526020600020905b8154815290600101906020018083116103f457829003601f168201915b5050505050815250509080600701604080519081016040529081600082015460001916600019168152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104d55780601f106104aa576101008083540402835291602001916104d5565b820191906000526020600020905b8154815290600101906020018083116104b857829003601f168201915b5050505050815250509050845600a165627a7a72305820f33546ecddede4f85a014e17942bd2f71d3a15e8916a4812109474ca738eee390029",
+  "sourceMap": "26:2592:0:-;;;189:1;162:28;;197:213;8:9:-1;5:2;;;30:1;27;20:12;5:2;197:213:0;393:10;385:5;;:18;;;;;;;;;;;;;;;;;;26:2592;;;;;;",
+  "deployedSourceMap": "26:2592:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1768:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1768:31:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1886:344;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1886:344:0;;;;;;86:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;86:20:0;;;;;;;;;;;;;;;;;;;;;;;;;;;2298:318;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2298:318:0;;;;;;1715:46;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1715:46:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1768:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;1886:344::-;:::o;86:20::-;;;;;;;;;;;;;:::o;2298:318::-;:::o;1715:46::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.24;\n\ncontract Welandam {\n\n    // TODO minimize data structs\n\n    address public owner;\n\n    // TODO allow changing this using governance\n    uint numRelayersPerOrder = 2;\n\n    constructor() public {\n        // Can owner be a governance contract?\n        // if possible make the data store separate from all the validation logic, so that it can be migrated\n        owner = msg.sender;\n    }\n\n    // hashes and signatures to do ecrecover\n    struct Party {\n\n        bytes32 hash;\n\n        bytes signature;\n    }\n\n    struct Item {\n        // TODO how to make this private while also allowing the contract and authorized parties to verify the item\n        // one way would be to store the encrypted order on IPFS and store the hash here?\n        bytes itemIpfsHash;\n\n        // we intentionally don't receive the quantity for privacy reasons\n\n        // amount payable in ether\n        uint64 amount;\n    }\n\n    struct Order {\n\n        // IPFS hash\n        bytes16 id;\n\n        Item[] items;\n\n        // TODO decide on exactly how we can handle any number of relayers while also encouraging\n        // all the network participants to relay everyone elses orders\n        // TODO This is a key problem that differentiates welandam from 0x since in 0x in order to share liquidity for exchange orders there is a natural incentive for relayers to share maker orders\n        Party[] relayers;\n\n        Party shipper;\n\n        Party merchant;\n\n        Party customer;\n\n    }\n\n    struct OrderConfirmation {\n        // UUID\n        bytes16 id;\n\n        Party shipper;\n\n        Party customer;\n    }\n\n    // Only stores orders until confirmed\n    // TODO what about returns? do we need a grace period?\n    mapping(bytes16 => Order) public pendingOrders;\n\n    bytes16[] public executedOrders;\n\n    // called by any protocol participant\n    // TODO param Order memory _order\n    function recordOrder() public {\n        // TODO verify sender is in governance registry\n        // TODO ecrecover addresses\n        // TODO verify parties using registries\n        // TODO validate order object\n        // TODO hold amounts from customer account\n        // TODO pay the relayer\n        //pendingOrders[_order.id] = _order;\n\n    }\n\n    // TODO param OrderConfirmation memory _orderConfirmation\n    function confirmOrder() public {\n        // TODO verify order is in pending\n        // TODO verify customer signature\n        // TODO verify shipper signature\n        // TODO transfer amounts to parties\n        //executedOrders.push(_orderConfirmation.id);\n        //delete pendingOrders[_orderConfirmation.id];\n\n    }\n}\n",
+  "sourcePath": "/Users/vimukthi/projects/tute/solidity/pet-shop-tutorial/contracts/Welandam.sol",
+  "ast": {
+    "absolutePath": "/Users/vimukthi/projects/tute/solidity/pet-shop-tutorial/contracts/Welandam.sol",
+    "exportedSymbols": {
+      "Welandam": [
+        63
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "Welandam",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 63,
+            "src": "86:20:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "86:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "name": "numRelayersPerOrder",
+            "nodeType": "VariableDeclaration",
+            "scope": 63,
+            "src": "162:28:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 4,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "162:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "32",
+              "id": 5,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "189:1:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 14,
+              "nodeType": "Block",
+              "src": "218:192:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "385:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 78,
+                        "src": "393:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 11,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "393:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "385:18:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 13,
+                  "nodeType": "ExpressionStatement",
+                  "src": "385:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 15,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "208:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "218:0:0"
+            },
+            "scope": 63,
+            "src": "197:213:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Welandam.Party",
+            "id": 20,
+            "members": [
+              {
+                "constant": false,
+                "id": 17,
+                "name": "hash",
+                "nodeType": "VariableDeclaration",
+                "scope": 20,
+                "src": "485:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 16,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "485:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19,
+                "name": "signature",
+                "nodeType": "VariableDeclaration",
+                "scope": 20,
+                "src": "508:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 18,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "508:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Party",
+            "nodeType": "StructDefinition",
+            "scope": 63,
+            "src": "461:69:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Welandam.Item",
+            "id": 25,
+            "members": [
+              {
+                "constant": false,
+                "id": 22,
+                "name": "itemIpfsHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "764:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 21,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "764:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 24,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "904:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 23,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "904:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Item",
+            "nodeType": "StructDefinition",
+            "scope": 63,
+            "src": "536:388:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Welandam.Order",
+            "id": 40,
+            "members": [
+              {
+                "constant": false,
+                "id": 27,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "975:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes16",
+                  "typeString": "bytes16"
+                },
+                "typeName": {
+                  "id": 26,
+                  "name": "bytes16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "975:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes16",
+                    "typeString": "bytes16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 30,
+                "name": "items",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "996:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Item_$25_storage_$dyn_storage_ptr",
+                  "typeString": "struct Welandam.Item[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 28,
+                    "name": "Item",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 25,
+                    "src": "996:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Item_$25_storage_ptr",
+                      "typeString": "struct Welandam.Item"
+                    }
+                  },
+                  "id": 29,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "996:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Item_$25_storage_$dyn_storage_ptr",
+                    "typeString": "struct Welandam.Item[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 33,
+                "name": "relayers",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "1387:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Party_$20_storage_$dyn_storage_ptr",
+                  "typeString": "struct Welandam.Party[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 31,
+                    "name": "Party",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 20,
+                    "src": "1387:5:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                      "typeString": "struct Welandam.Party"
+                    }
+                  },
+                  "id": 32,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1387:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Party_$20_storage_$dyn_storage_ptr",
+                    "typeString": "struct Welandam.Party[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 35,
+                "name": "shipper",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "1414:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 34,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1414:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 37,
+                "name": "merchant",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "1438:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 36,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1438:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 39,
+                "name": "customer",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "1463:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 38,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1463:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Order",
+            "nodeType": "StructDefinition",
+            "scope": 63,
+            "src": "930:555:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Welandam.OrderConfirmation",
+            "id": 47,
+            "members": [
+              {
+                "constant": false,
+                "id": 42,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 47,
+                "src": "1542:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes16",
+                  "typeString": "bytes16"
+                },
+                "typeName": {
+                  "id": 41,
+                  "name": "bytes16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1542:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes16",
+                    "typeString": "bytes16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44,
+                "name": "shipper",
+                "nodeType": "VariableDeclaration",
+                "scope": 47,
+                "src": "1563:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 43,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1563:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46,
+                "name": "customer",
+                "nodeType": "VariableDeclaration",
+                "scope": 47,
+                "src": "1587:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 45,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1587:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "OrderConfirmation",
+            "nodeType": "StructDefinition",
+            "scope": 63,
+            "src": "1491:117:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 51,
+            "name": "pendingOrders",
+            "nodeType": "VariableDeclaration",
+            "scope": 63,
+            "src": "1715:46:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes16_$_t_struct$_Order_$40_storage_$",
+              "typeString": "mapping(bytes16 => struct Welandam.Order)"
+            },
+            "typeName": {
+              "id": 50,
+              "keyType": {
+                "id": 48,
+                "name": "bytes16",
+                "nodeType": "ElementaryTypeName",
+                "src": "1723:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes16",
+                  "typeString": "bytes16"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1715:25:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes16_$_t_struct$_Order_$40_storage_$",
+                "typeString": "mapping(bytes16 => struct Welandam.Order)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 49,
+                "name": "Order",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 40,
+                "src": "1734:5:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Order_$40_storage_ptr",
+                  "typeString": "struct Welandam.Order"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 54,
+            "name": "executedOrders",
+            "nodeType": "VariableDeclaration",
+            "scope": 63,
+            "src": "1768:31:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_bytes16_$dyn_storage",
+              "typeString": "bytes16[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 52,
+                "name": "bytes16",
+                "nodeType": "ElementaryTypeName",
+                "src": "1768:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes16",
+                  "typeString": "bytes16"
+                }
+              },
+              "id": 53,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "1768:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_bytes16_$dyn_storage_ptr",
+                "typeString": "bytes16[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 57,
+              "nodeType": "Block",
+              "src": "1916:314:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 58,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "recordOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1906:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1916:0:0"
+            },
+            "scope": 63,
+            "src": "1886:344:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "2329:287:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 62,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "confirmOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2319:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2329:0:0"
+            },
+            "scope": 63,
+            "src": "2298:318:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 64,
+        "src": "26:2592:0"
+      }
+    ],
+    "src": "0:2619:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/vimukthi/projects/tute/solidity/pet-shop-tutorial/contracts/Welandam.sol",
+    "exportedSymbols": {
+      "Welandam": [
+        63
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "Welandam",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 63,
+            "src": "86:20:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "86:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "name": "numRelayersPerOrder",
+            "nodeType": "VariableDeclaration",
+            "scope": 63,
+            "src": "162:28:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 4,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "162:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "32",
+              "id": 5,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "189:1:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 14,
+              "nodeType": "Block",
+              "src": "218:192:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "385:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 78,
+                        "src": "393:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 11,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "393:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "385:18:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 13,
+                  "nodeType": "ExpressionStatement",
+                  "src": "385:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 15,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "208:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "218:0:0"
+            },
+            "scope": 63,
+            "src": "197:213:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Welandam.Party",
+            "id": 20,
+            "members": [
+              {
+                "constant": false,
+                "id": 17,
+                "name": "hash",
+                "nodeType": "VariableDeclaration",
+                "scope": 20,
+                "src": "485:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 16,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "485:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19,
+                "name": "signature",
+                "nodeType": "VariableDeclaration",
+                "scope": 20,
+                "src": "508:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 18,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "508:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Party",
+            "nodeType": "StructDefinition",
+            "scope": 63,
+            "src": "461:69:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Welandam.Item",
+            "id": 25,
+            "members": [
+              {
+                "constant": false,
+                "id": 22,
+                "name": "itemIpfsHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "764:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 21,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "764:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 24,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "904:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 23,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "904:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Item",
+            "nodeType": "StructDefinition",
+            "scope": 63,
+            "src": "536:388:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Welandam.Order",
+            "id": 40,
+            "members": [
+              {
+                "constant": false,
+                "id": 27,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "975:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes16",
+                  "typeString": "bytes16"
+                },
+                "typeName": {
+                  "id": 26,
+                  "name": "bytes16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "975:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes16",
+                    "typeString": "bytes16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 30,
+                "name": "items",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "996:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Item_$25_storage_$dyn_storage_ptr",
+                  "typeString": "struct Welandam.Item[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 28,
+                    "name": "Item",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 25,
+                    "src": "996:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Item_$25_storage_ptr",
+                      "typeString": "struct Welandam.Item"
+                    }
+                  },
+                  "id": 29,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "996:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Item_$25_storage_$dyn_storage_ptr",
+                    "typeString": "struct Welandam.Item[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 33,
+                "name": "relayers",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "1387:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Party_$20_storage_$dyn_storage_ptr",
+                  "typeString": "struct Welandam.Party[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "contractScope": null,
+                    "id": 31,
+                    "name": "Party",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 20,
+                    "src": "1387:5:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                      "typeString": "struct Welandam.Party"
+                    }
+                  },
+                  "id": 32,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "1387:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Party_$20_storage_$dyn_storage_ptr",
+                    "typeString": "struct Welandam.Party[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 35,
+                "name": "shipper",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "1414:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 34,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1414:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 37,
+                "name": "merchant",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "1438:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 36,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1438:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 39,
+                "name": "customer",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "1463:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 38,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1463:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Order",
+            "nodeType": "StructDefinition",
+            "scope": 63,
+            "src": "930:555:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Welandam.OrderConfirmation",
+            "id": 47,
+            "members": [
+              {
+                "constant": false,
+                "id": 42,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 47,
+                "src": "1542:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes16",
+                  "typeString": "bytes16"
+                },
+                "typeName": {
+                  "id": 41,
+                  "name": "bytes16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1542:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes16",
+                    "typeString": "bytes16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44,
+                "name": "shipper",
+                "nodeType": "VariableDeclaration",
+                "scope": 47,
+                "src": "1563:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 43,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1563:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46,
+                "name": "customer",
+                "nodeType": "VariableDeclaration",
+                "scope": 47,
+                "src": "1587:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                  "typeString": "struct Welandam.Party"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 45,
+                  "name": "Party",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 20,
+                  "src": "1587:5:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Party_$20_storage_ptr",
+                    "typeString": "struct Welandam.Party"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "OrderConfirmation",
+            "nodeType": "StructDefinition",
+            "scope": 63,
+            "src": "1491:117:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 51,
+            "name": "pendingOrders",
+            "nodeType": "VariableDeclaration",
+            "scope": 63,
+            "src": "1715:46:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes16_$_t_struct$_Order_$40_storage_$",
+              "typeString": "mapping(bytes16 => struct Welandam.Order)"
+            },
+            "typeName": {
+              "id": 50,
+              "keyType": {
+                "id": 48,
+                "name": "bytes16",
+                "nodeType": "ElementaryTypeName",
+                "src": "1723:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes16",
+                  "typeString": "bytes16"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1715:25:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes16_$_t_struct$_Order_$40_storage_$",
+                "typeString": "mapping(bytes16 => struct Welandam.Order)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 49,
+                "name": "Order",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 40,
+                "src": "1734:5:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Order_$40_storage_ptr",
+                  "typeString": "struct Welandam.Order"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 54,
+            "name": "executedOrders",
+            "nodeType": "VariableDeclaration",
+            "scope": 63,
+            "src": "1768:31:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_bytes16_$dyn_storage",
+              "typeString": "bytes16[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 52,
+                "name": "bytes16",
+                "nodeType": "ElementaryTypeName",
+                "src": "1768:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes16",
+                  "typeString": "bytes16"
+                }
+              },
+              "id": 53,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "1768:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_bytes16_$dyn_storage_ptr",
+                "typeString": "bytes16[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 57,
+              "nodeType": "Block",
+              "src": "1916:314:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 58,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "recordOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1906:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1916:0:0"
+            },
+            "scope": 63,
+            "src": "1886:344:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "2329:287:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 62,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "confirmOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2319:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2329:0:0"
+            },
+            "scope": 63,
+            "src": "2298:318:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 64,
+        "src": "26:2592:0"
+      }
+    ],
+    "src": "0:2619:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-09-07T17:13:25.551Z"
+}
