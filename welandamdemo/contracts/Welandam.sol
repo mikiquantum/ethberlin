@@ -23,23 +23,17 @@ contract Welandam {
         bytes signature;
     }
 
-    struct Item {
+    // TODO this struct only needs the settlement amount and a reference to an encrypted order object on ipfs
+    struct Order {
+
+        bytes16 id;
+
         // TODO how to make this private while also allowing the contract and authorized parties to verify the item
         // one way would be to store the encrypted order on IPFS and store the hash here?
         bytes itemIpfsHash;
 
-        // we intentionally don't receive the quantity for privacy reasons
-
         // amount payable in ether
         uint64 amount;
-    }
-
-    struct Order {
-
-        // IPFS hash
-        bytes16 id;
-
-        Item[] items;
 
         // TODO decide on exactly how we can handle any number of relayers while also encouraging
         // all the network participants to relay everyone elses orders
